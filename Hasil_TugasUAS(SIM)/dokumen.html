@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yudisium - Dokumen</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #e5f1f0;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      height: 100;
+      background-color: #2f4f4f;
+      width: 220px;
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .sidebar .profile-pic {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+
+    .sidebar nav a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 5px;
+    }
+
+    .sidebar nav a.active,
+    .sidebar nav a:hover {
+      background-color: white;
+      color: #b39216;
+    }
+
+    .sidebar nav img,
+    .sidebar .logout img {
+      width: 20px;
+      margin-right: 10px;
+    }
+
+    .sidebar .logout {
+      margin-top: auto;
+      color: #d4af37;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+    }
+
+
+    /* Main */
+    .main-content {
+      flex: 1;
+      padding: 30px;
+    }
+
+    header h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .tab-menu {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 25px;
+    }
+
+    .tab-menu button {
+      flex: 1;
+      padding: 10px;
+      background: #e6e6e6;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      color: #333;
+      cursor: pointer;
+    }
+
+    .tab-menu button.active,
+    .tab-menu button:hover {
+      background: #2f4d4a;
+      color: white;
+    }
+
+    /* Periode box */
+    .periode-box {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 25px;
+    }
+
+    .periode-box h2 {
+      background-color: #d9d9d9;
+      padding: 10px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    /* Konten kosong */
+    .content-box {
+      background: white;
+      border-radius: 15px;
+      height: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <a href="profil.html">
+        <img src="images\gua.jpg" alt="Foto Profil" class="profile-pic" />
+      </a>
+      <h3>Muhammad Diki Bahtiyar</h3>
+      <nav class="menu">
+        <a href="home.html"><img src="images\icons8-dashboard-layout-48.png"> Dashboard</a>
+        <a href="krs.html"><img src="images\icons8-graduation-cap-50.png"> Perkuliahan</a>
+        <a href="khs.html"><img src="images\icons8-notepad-50.png"> Laporan</a>
+        <a class="active" href="data.html"><img src="images\icons8-address-book-48.png"> Yudisium</a>
+        <a href="disabled"><img src="images\icons8-certificate-32.png"> New Spekma</a>
+      </nav>
+      <a href="login.html" class="logout"><img src="images\icons8-logout-50.png"> Logout</a>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main-content">
+      <header>
+        <h1>Welcome SIM!</h1>
+      </header>
+
+      <div class="tab-menu">
+        <a href="data.html"><button class="tab">Data</button></a>
+        <a href="dokumen.html"><button class="tab active">Dokumen</button></a>
+      </div>
+
+      <div class="periode-box">
+        <h2>PRIODE</h2>
+      </div>
+
+      <div class="content-box">
+        <!-- Kosong sesuai desain dokumen -->
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>

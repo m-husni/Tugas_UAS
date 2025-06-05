@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yudisium - Data</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #e5f1f0;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      height: 100;
+      background-color: #2f4f4f;
+      width: 220px;
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .sidebar .profile-pic {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+
+    .sidebar nav a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 5px;
+    }
+
+    .sidebar nav a.active,
+    .sidebar nav a:hover {
+      background-color: white;
+      color: #b39216;
+    }
+
+    .sidebar nav img,
+    .sidebar .logout img {
+      width: 20px;
+      margin-right: 10px;
+    }
+
+    .sidebar .logout {
+      margin-top: auto;
+      color: #d4af37;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+    }
+
+    /* Main Content */
+    .main-content {
+      flex: 1;
+      padding: 30px;
+    }
+
+    header h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    /* Data Box */
+    .data-container {
+      background-color: white;
+      border-radius: 15px;
+      display: flex;
+      padding: 25px;
+      gap: 20px;
+    }
+
+    .data-left,
+    .data-right {
+      width: 40%;
+    }
+
+    .data-left ul,
+    .data-right ul {
+      list-style: none;
+      line-height: 2.2;
+    }
+
+    .data-left ul li {
+      font-weight: bold;
+    }
+
+    .data-photo img {
+      width: 100px;
+      height: auto;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <a href="profil.html">
+        <img src="images\gua.jpg" alt="Foto Profil" class="profile-pic" />
+      </a>
+      <h3>Muhammad Diki Bahtiyar</h3>
+      <nav class="menu">
+        <a href="home.html"><img src="images\icons8-dashboard-layout-48.png"> Dashboard</a>
+        <a href="krs.html"><img src="images\icons8-graduation-cap-50.png"> Perkuliahan</a>
+        <a href="khs.html"><img src="images\icons8-notepad-50.png"> Laporan</a>
+        <a class="active" href="data.html"><img src="images\icons8-address-book-48.png"> Yudisium</a>
+        <a href="disabled"><img src="images\icons8-certificate-32.png"> New Spekma</a>
+      </nav>
+      <a href="login.html" class="logout"><img src="images\icons8-logout-50.png"> Logout</a>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main-content">
+      <header>
+        <h1>Welcome SIM!</h1>
+      </header>
+
+      <div class="data-container">
+        <div class="data-left">
+          <ul>
+            <li><strong>NIM</strong></li>
+            <li><strong>Nama Mahasiswa</strong></li>
+            <li><strong>Dosen Wali</strong></li>
+            <li><strong>Fakultas</strong></li>
+            <li><strong>Prodi</strong></li>
+            <li><strong>Priode Daftar</strong></li>
+            <li><strong>Kulikum Mahasiswa</strong></li>
+            <li><strong>Status Mahasiswa</strong></li>
+            <li><strong>Info Akademi</strong></li>
+          </ul>
+        </div>
+        <div class="data-right">
+          <ul>
+            <li>231101040</li>
+            <li>MUHMMAD DIKI BAHTIYAR</li>
+            <li>Ita Aristia Saida, M. pd. (201610191)</li>
+            <li>Sains Dan Teknologi</li>
+            <li>S1 Teknik Informatika</li>
+            <li>Semester Gasal 2023</li>
+            <li>2021</li>
+            <li>aktif</li>
+            <li>
+              Semester 4 <br />
+              Batas SKS 24 <br />
+              SKS Lulus 59 <br />
+              IPK <br />
+              IPS <br />
+              Cuti 0
+            </li>
+          </ul>
+        </div>
+        <div class="data-photo">
+          <img src="images\gua.jpg" alt="Foto Mahasiswa">
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>

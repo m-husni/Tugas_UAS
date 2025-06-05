@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KRS - SIM</title>
+  <style>
+    
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #e1f3f4;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    .sidebar {
+      height: 100;
+      background-color: #2f4f4f;
+      width: 220px;
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .sidebar .profile-pic {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+
+    .sidebar nav a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 5px;
+    }
+
+    .sidebar nav a.active,
+    .sidebar nav a:hover {
+      background-color: white;
+      color: #b39216;
+    }
+
+    .sidebar nav img,
+    .sidebar .logout img {
+      width: 20px;
+      margin-right: 10px;
+    }
+
+    .sidebar .logout {
+      margin-top: auto;
+      color: #d4af37;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 30px;
+    }
+
+    header h1 {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+
+    .tab-menu {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 25px;
+    }
+
+    .tab-menu button {
+      flex: 1;
+      padding: 10px;
+      background: #e6e6e6;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      color: #333;
+      cursor: pointer;
+    }
+
+    .tab-menu .active,
+    .tab-menu :hover {
+      background-color: #2c4a44;
+      color: white;
+    }
+
+    .profile-box {
+      background-color: #d9a825;
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .profile-box img {
+      width: 100px;
+      height: 120px;
+      margin-right: 20px;
+    }
+
+    .profile-box .info p {
+      margin: 5px 0;
+    }
+
+    h2 {
+      margin: 20px 0 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    table th,
+    table td {
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+
+    tfoot td {
+      font-weight: bold;
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <a href="profil.html">
+        <img src="images\gua.jpg" alt="Foto Profil" class="profile-pic" />
+      </a>
+      <h3>Muhammad Diki Bahtiyar</h3>
+      <nav class="menu">
+        <a href="home.html"><img src="images\icons8-dashboard-layout-48.png"> Dashboard</a>
+        <a class="active" href="krs.html"><img src="images\icons8-graduation-cap-50.png"> Perkuliahan</a>
+        <a href="khs.html"><img src="images\icons8-notepad-50.png"> Laporan</a>
+        <a href="data.html"><img src="images\icons8-address-book-48.png"> Yudisium</a>
+        <a href="disabled"><img src="images\icons8-certificate-32.png"> New Spekma</a>
+      </nav>
+      <a href="login.html" class="logout"><img src="images\icons8-logout-50.png"> Logout</a>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header>
+        <h1>Welcome SIM!</h1>
+      </header>
+
+      <div class="tab-menu">
+        <a href="krs.html"><button class="active">KRS</button></a>
+        <a href="jadwal.html"><button>Jadwal</button></a>
+        <a href="absensi.html"><button>Absensi</button></a>
+      </div>
+
+      <div class="profile-box">
+        <img src="images\gua.jpg" alt="Foto">
+        <div class="info">
+          <p><strong>Nama:</strong> MUHAMMAD DIKI BAHTIYAR</p>
+          <p><strong>Dosen Wali:</strong> ITA ARISTIA SAIDA, M.Pd.</p>
+          <p><strong>Fakultas:</strong> Sains dan Teknologi</p>
+          <p><strong>Jurusan:</strong> Teknik Informatika</p>
+          <p><strong>Jenis Kelamin:</strong> Laki-Laki</p>
+        </div>
+      </div>
+
+      <h2>Kartu Rencana Studi (KRS) - Semester Genap 2024-2025</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Kode</th>
+            <th>Periode</th>
+            <th>Nama Mata Kuliah</th>
+            <th>Kelas</th>
+            <th>SKS</th>
+            <th>Waktu</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>STI114421</td>
+            <td>20124</td>
+            <td>ENGLISH TEKNOLOGI</td>
+            <td>TI4B</td>
+            <td>2</td>
+            <td>SELASA, 10:00-11:10</td>
+            <td><input type="checkbox"></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>STI114422</td>
+            <td>20124</td>
+            <td>ETIKA PROFESI</td>
+            <td>TI4B</td>
+            <td>2</td>
+            <td>SELASA, 13:10-14:20</td>
+            <td><input type="checkbox"></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>STI114417</td>
+            <td>20124</td>
+            <td>JARKOM</td>
+            <td>TI4B</td>
+            <td>2</td>
+            <td>KAMIS, 12:40-13:40</td>
+            <td><input type="checkbox"></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>STI114416</td>
+            <td>20124</td>
+            <td>KOTA CERDAS</td>
+            <td>TI4B</td>
+            <td>4</td>
+            <td>RABU, 12:40-13:40</td>
+            <td><input type="checkbox"></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>STI114419</td>
+            <td>20124</td>
+            <td>P. SELULER</td>
+            <td>TI4B</td>
+            <td>4</td>
+            <td>KAMIS, 15:50-16:50</td>
+            <td><input type="checkbox"></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>STI114423</td>
+            <td>20124</td>
+            <td>RPL</td>
+            <td>TI4B</td>
+            <td>4</td>
+            <td>KAMIS, 08:00-10:30</td>
+            <td><input type="checkbox"></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>STI114418</td>
+            <td>20124</td>
+            <td>SISTEM OPRASI</td>
+            <td>TI4B</td>
+            <td>2</td>
+            <td>KAMIS, 11:20-12:30</td>
+            <td><input type="checkbox"></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="5"><strong>Total SKS</strong></td>
+            <td colspan="3">20</td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+  </div>
+</body>
+
+</html>

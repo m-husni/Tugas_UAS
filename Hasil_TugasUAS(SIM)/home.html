@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard SIM</title>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #e1f3f4;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    .sidebar {
+      height: 100;
+      background-color: #2f4f4f;
+      width: 220px;
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .sidebar .profile-pic {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+
+    .sidebar nav a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 5px;
+    }
+
+    .sidebar nav a.active,
+    .sidebar nav a:hover {
+      background-color: white;
+      color: #b39216;
+    }
+
+    .sidebar nav img,
+    .sidebar .logout img {
+      width: 20px;
+      margin-right: 10px;
+    }
+
+    .sidebar .logout {
+      margin-top: auto;
+      color: #d4af37;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+    }
+
+    .content {
+      height: 100%;
+      flex: 2;
+      padding: 20px;
+      background-color: white;
+      border-radius: 0 0 30px 30px;
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .section-header {
+      font-weight: 700;
+      font-size: 1.2rem;
+      padding: 10px;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    .orange {
+      background-color: #d4af37;
+      color: white;
+    }
+
+    .green {
+      background-color: #2f4f4f;
+      color: #d4af37;
+    }
+
+    .info-panel {
+      height: 100%;
+      width: 300px;
+      background-color: #3f5c5c;
+      color: white;
+      padding: 20px;
+      border-radius: 0 0 30px 30px;
+      margin: 20px 20px 20px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .info-panel .tanggal {
+      background-color: #d4af37;
+      padding: 10px;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      color: white;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    .info-panel .buttons button {
+      width: 100%;
+      padding: 10px;
+      background-color: #d4af37;
+      color: white;
+      border: none;
+      text-align: left;
+      margin: 5px 0;
+      font-weight: bold;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .info-panel .charts img {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    a {
+      color: #1e3a3a;
+      text-decoration: none;
+    }
+
+    h1 {
+      margin: 0 0 20px 0;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <a href="profil.html">
+        <img src="images\gua.jpg" alt="Foto Profil" class="profile-pic" />
+      </a>
+      <h3>Muhammad Diki Bahtiyar</h3>
+      <nav class="menu">
+        <a class="active" href="home.html"><img src="images\icons8-dashboard-layout-48.png"> Dashboard</a>
+        <a href="krs.html"><img src="images\icons8-graduation-cap-50.png"> Perkuliahan</a>
+        <a href="khs.html"><img src="images\icons8-notepad-50.png"> Laporan</a>
+        <a href="data.html"><img src="images\icons8-address-book-48.png"> Yudisium</a>
+        <a href="disabled"><img src="images\icons8-certificate-32.png"> New Spekma</a>
+      </nav>
+      <a href="login.html" class="logout"><img src="images\icons8-logout-50.png"> Logout</a>
+    </aside>
+
+    <main class="content">
+      <section class="pengumuman">
+        <div class="section-header orange">PENGUMUMAN</div>
+        <img src="images\pdi.png" alt="PDDIKTI">
+        <h4>Input Biodata Mahasiswa Baru</h4>
+        <p>Assalamu’alaikum Wr. Wb. Diberitahukan kepada mahasiswa UNU Sunan Giri Bojonegoro untuk segera melengkapi
+          Biodata di SIM selengkap-lengkapnya karena nanti akan menjadi acuan input data di laman <a
+            href="#">Selengkapnya...</a></p>
+        <small>Daftar Pengumuman<br><i>Input Biodata Mahasiswa Baru</i></small>
+      </section>
+
+      <section class="berita">
+        <div class="section-header green">Berita</div>
+        <p>Daftar Berita</p>
+      </section>
+
+      <section class="diskusi">
+        <div class="section-header green">Diskusi</div>
+        <p>Diskusi Terbaru</p>
+      </section>
+    </main>
+
+    <aside class="info-panel">
+      <div class="tanggal">
+        <img src="images\icons8-business-64.png">
+        <strong>Kamis, 15 Mei 2025<br><span>:11:25:15</span></strong>
+      </div>
+
+      <div class="user-info">
+        <strong>231101040 - MUHAMMAD DIKI BAHTIYAR</strong>
+        <p>Login Terakhir: Senin, 12 Mei 2025, 11:20:22<br>
+          Status: Aktif, Semester: 4, IPK: 3.84, SKS Lulus: 59,<br>
+          IPS Lalu: 3.76</p>
+
+        <p><strong>Jadwal Kuliah</strong><br>
+          10:00 - 11:10 ST1114421 - ENGLISH FOR SCIENCE AND TECHNOLOGY (FST 6)<br>
+          13:10 - 14:20 ST1114422 - ETIKA PROFESI (FST 4)</p>
+      </div>
+
+      <div class="buttons">
+        <button>Tagihan Keuangan</button>
+        <button>USER GUIDE</button>
+        <button>Kemajuan Belajar</button>
+      </div>
+    </aside>
+  </div>
+</body>
+
+</html>

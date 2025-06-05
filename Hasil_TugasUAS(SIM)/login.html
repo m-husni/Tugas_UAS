@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login SIM - UNI GIRI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            display: flex;
+            min-height: 100vh;
+        }
+        
+        .container {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Login Section */
+        .login-section {
+            width: 40%;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-right: 20px;
+        }
+        
+        .login-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .unigiri-logo {
+            width: 150px; /* Sesuaikan ukuran sesuai kebutuhan */
+            margin-bottom: 15px;
+        }
+        
+        .welcome-text {
+            color: #7f8c8d;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        
+        .sim-title {
+            color: #2c3e50;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .system-name {
+            color: #bdc3c7;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        
+        .university-name {
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        
+        .login-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .login-header h1 {
+            color: #2c3e50;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .login-header h2 {
+            color: #7f8c8d;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        
+        .login-header p {
+            color: #bdc3c7;
+            font-size: 14px;
+        }
+        
+        .login-form {
+            margin-top: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        
+        /* Images Section */
+        .images-section {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .image-container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .image-container img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .image-caption {
+            font-size: 12px;
+            color: #7f8c8d;
+            line-height: 1.5;
+        }
+        
+        /* Contact Info */
+        .contact-info {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-top: auto;
+        }
+        
+        .contact-info h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info p {
+            font-size: 12px;
+            color: #7f8c8d;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Login Section -->
+        <div class="login-section">
+            <div class="login-header">
+                <!-- Ganti teks UNI GIRI dengan logo -->
+                <img src="images\login-logo.png" alt="UNI GIRI Logo" class="unigiri-logo">
+                <p class="welcome-text">Selamat Datang di</p>
+                <h1 class="sim-title">SIM</h1>
+                <p class="system-name">SISTEM INFORMASI MANAJEMEN</p>
+                <p class="university-name">Universitas Nahdlatul Ulama Sunan Giri</p>
+            </div>
+            
+            <div class="login-form">
+                <form>
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" placeholder="Masukkan username">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Masukkan password">
+                    </div>
+                    
+                    <a href="home.html">
+                        <button type="button" class="login-btn">Login</button>
+                    </a>
+                </form>
+            </div>
+            
+            <div class="contact-info" style="margin-top: 30px;">
+                <p>0851-6672-3404</p>
+                <p>sim.unugiri.ac.id</p>
+                <p>https://www.instagram.com/unugiribojonegoro?igsh=cGhmOHc0ZjVvNzBj</p>
+                <p>unugiri.ac.id</p>
+            </div>
+        </div>
+        
+        <!-- Images Section -->
+        <div class="images-section">
+            <div class="image-container">
+                <img src="images\login-2.jpeg" alt="PMB Banner">
+                <div class="image-caption">                  
+                  <p>Informasi Lebih Lanjut Instagram kami</p>
+                  <p>https://www.instagram.com/pmb_unugiri?igsh=dWhxMnc3ZWlmcGJy</p>
+                </div>
+            </div>
+            
+            <div class="image-container">
+                <img src="images\login-1.jpeg" alt="Scan QR Code">
+                <div class="image-caption">
+                    <h3>UNUGIRI</h3>
+                    <p>We Are Open!</p>
+                    <h3>PMB</h3>
+                    <h4>PENERIMAAN MAHASISWA BARU</h4>
+                    <p>Universitas Nahdlatul Ulama Sunan Giri</p>
+                    <p>Informasi lebih Lengkap</p>
+                    <p>0851-6672-3404</p>
+                </div>                
+            </div>
+            
+            <div class="contact-info">
+                <h3>Sistem Informasi Manajemen</h3>
+                <p>merupakan sebuah perangkat</p>
+                <p>untuk mendukung penyelenggaraan pendidikan disatuan pendidikan dan digunakan untuk menyampaikan program manajemen kualitas kepada seluruh civitas akademik dan</p>
+                <p>0851-6672-3404</p>
+                <p>sim.unugiri.ac.id</p>
+                <p>https://www.instagram.com/unugiribojonegoro?igsh=cGhmOHc0ZjVvNzBj</p>
+                <p>unugiri.ac.id</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
